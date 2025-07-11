@@ -14,7 +14,7 @@ export function LogoutButton() {
     <form action={handleLogout}>
       <button
         type="submit"
-        className="absolute top-4 right-4 p-2 text-gray-600 hover:text-gray-800 transition-colors"
+        className="absolute top-6 right-4 p-2 text-gray-600 hover:text-gray-800 transition-colors"
         title="Logout"
       >
         <svg

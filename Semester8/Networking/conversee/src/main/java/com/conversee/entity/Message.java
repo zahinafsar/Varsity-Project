@@ -1,7 +1,6 @@
 package com.conversee.entity;
 
 import java.time.LocalDateTime;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -11,6 +10,7 @@ public class Message {
     @Id
     private String id;
     private String username;
+    private String receiver;
     private String content;
 
     @Column(name = "timestamp", updatable = false, nullable = false)
@@ -30,6 +30,14 @@ public class Message {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getReceiver() {
+        return receiver;
+    }
+
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
     }
 
     public String getContent() {
@@ -53,6 +61,7 @@ public class Message {
         return "Message{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
+                ", receiver='" + receiver + '\'' +
                 ", content='" + content + '\'' +
                 ", timestamp=" + timestamp +
                 '}';

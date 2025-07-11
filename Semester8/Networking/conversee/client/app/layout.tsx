@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { LogoutButton } from "./logout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,8 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-10">
-          <div className="w-full max-w-[700px] bg-white shadow-md rounded-lg p-4">
+        <LogoutButton />
+        <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50">
+          <div className="w-full max-w-[800px] bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl p-6 m-4">
             {children}
           </div>
         </div>

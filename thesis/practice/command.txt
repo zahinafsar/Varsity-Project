@@ -1,0 +1,5 @@
+# Train
+yolo task=detect mode=train model=yolov8n.pt data=config.yaml epochs=3
+
+# Test
+yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=pests conf=0.1

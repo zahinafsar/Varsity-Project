@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClientThread",
+            "request": "launch",
+            "mainClass": "ClientThread",
+            "projectName": "app"
+        },
+        {
+            "type": "java",
+            "name": "ServerThread",
+            "request": "launch",
+            "mainClass": "com.clp.ServerThread",
+            "projectName": "thread"
+        },
+        {
+            "type": "java",
+            "name": "ClientThread",
+            "request": "launch",
+            "mainClass": "com.clp.ClientThread",
+            "projectName": "thread"
+        },
+        {
+            "type": "java",
             "name": "client",
             "request": "launch",
             "mainClass": "client",

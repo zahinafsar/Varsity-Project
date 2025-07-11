@@ -12,7 +12,7 @@ async function handleLogin(formData: FormData) {
   }
 
   cookieStore.set("username", username);
-  redirect("/chat");
+  redirect("/conversations");
 }
 
 export default function Login() {

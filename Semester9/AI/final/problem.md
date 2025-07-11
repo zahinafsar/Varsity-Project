@@ -1,0 +1,8 @@
+- Breadth-First Search
+- Depth-First Search
+- Iterative Deepening depth-first search
+- Implement Graph Coloring Algorithm
+- N-Queen Problem Using Backtracking Algorithm
+- WEKA
+- K-Means Clustering
+- Heuristic A* Search Algorithm
